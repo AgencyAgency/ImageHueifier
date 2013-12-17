@@ -1,6 +1,6 @@
 (ns fors.core
   (:import [java.awt Color]
-           [java.awt.image BufferedImage ColorModel DataBufferByte]
+           [java.awt.image BufferedImage DataBufferByte]
            [javax.imageio ImageIO]))
 
 (defn do-for []
@@ -10,10 +10,7 @@
     [x y]))
 
 ;; Iolani Seal
-;; (def asset-dir (clojure.java.io/file "."))
-;; (def asset-files (file-seq asset-dir))
 (def seal-file (clojure.java.io/file "Iolani_shield.jpg"))
-;; BufferedImage hugeImage =
 (defn buff-image [image-file]
   (ImageIO/read image-file))
 (defn buff-seal-image []
